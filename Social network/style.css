@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline: none;
+}
+body {
+    background-image: url("slike/mrezaBackground.jpg");
+    background-size: cover;
+}
+.row{
+    width: 100%;
+    overflow: hidden;
+}
+.head ul{
+    overflow:hidden;
+    list-style-type: none;
+    text-align: center;
+    position: fixed;
+    top:0;
+}
+.head li {
+    float:left;
+    width:20%;
+}
+.head a{
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    display:block;
+    color:white;
+    padding:10px;
+    font-size:25px;
+    background-color:rgba(54, 101, 146, 0.7);
+}
+
+.head a:hover{
+    opacity: 0.5;
+}
+.forma{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -30%);
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
+.forma input{
+    height:25px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    border:0;
+    margin-top:2px;
+    margin-bottom:2px;
+    border-bottom:2px solid white;
+    background: transparent;
+    color:wheat;
+}
+.forma label{
+    color:white;
+    text-align: left;
+}
+.fieldset{
+    border:2px solid white;
+    border-radius: 10px;
+    padding:10px;
+    background-color:rgba(54, 101, 146, 0.7);
+}
+.legend{
+    color:white;
+    font-size: x-large;
+}
+.submit{
+    font-size:15px;
+    margin-top:10px;
+    background-color:rgb(61, 192, 61);
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+}
+.submit:hover{
+    color:white;
+}
+.mesage{
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -80%);
+    font-size: x-large;
+    color:blue;
+}
+.error{
+    color:red;
+    font-size: small;
+}
+
+.tabela{
+    background-color: rgba(54, 101, 146, 0.7);
+    border:2px solid white;
+    border-collapse: collapse;
+    width:800px;
+    text-align: center;
+    position:fixed;
+    bottom:10%;
+    left:50%; 
+    transform: translate(-50%, -10%);
+    font-size: large;
+    box-shadow: 2px 2px 12px rgba(37, 63, 87, 0.7), -1px -1px 8px rgba(37, 63, 87, 0.7);
+}
+.tabela th{
+    border-bottom:2px solid white;
+    padding:15px;
+    color:white;
+    background-color: rgba(40, 78, 114, 0.7);
+}
+.tabela td {
+    border-bottom:2px solid white;
+    padding:15px;
+    color:white;
+}
+.tabela tr{
+    transition: all , 0.5s ease-in;
+    cursor: pointer;
+    color:white;
+}
+.tabela tr:hover{
+    background-color:  rgba(37, 63, 87, 0.7);
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(37, 63, 87, 0.7), -1px -1px 8px rgba(37, 63, 87, 0.7);
+}
+.prviL , .drugiL{
+    text-decoration: none;
+    border:1px solid white;
+    display:inline-block;
+    color:white;
+    background-color: rgba(37, 63, 87, 0.7);
+    padding: 0 5px 0 5px;
+    margin-right:5px;
+    border-radius: 5px;
+}
+.prviL:hover, .drugiL:hover{
+    background-color: rgba(54, 101, 146, 0.7);
+}
+.prviL:active, .drugiL:active{
+    padding: 0 3px 0 3px;
+}
+.index{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.index a{
+    display:inline-block;
+    padding:20px;
+    border:2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+    width:150px;
+    text-align: center;
+    background-color: rgba(34, 64, 92, 0.6);
+    margin:0 20px 0 20px;
+}
+.indexNaslov{
+    text-align: center;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -30%);
+    color:white;
+    background-color: rgba(37, 63, 87, 0.7);
+    border:0;
+    border-radius: 10px;
+}
+.objava{
+    color:white;
+    text-align: center;
+    margin-top:30px;
+    font-size: xx-large;
+    position: absolute;
+    left:50%;
+    top:10%;
+    transform: translate(-50%, -10%);
+    box-shadow: 2px 2px 12px rgba(37, 63, 87, 0.7), -1px -1px 8px rgba(37, 63, 87, 0.7);
+    border-radius: 10px; 
+}
+.objava:hover{
+    box-shadow: 2px 2px 12px rgba(37, 63, 87, 0.7), -1px -1px 8px rgba(37, 63, 87, 0.7);
+}
+.tabelaMuski{
+    color:blue;
+    background-color: rgba(54, 101, 146, 0.7);
+    border:2px solid white;
+    border-collapse: collapse;
+}
+.tabelaMuski tr, .tabelaMuski td{
+    border:2px solid white;
+}
+.tabelaZenski{
+    color:pink;
+    background-color: rgba(54, 101, 146, 0.7);
+    border:2px solid white;
+    border-collapse: collapse;
+}
+.tabelaZenski tr, .tabelaZenski td{
+    border:2px solid white;
+}
+.tabelaOstali{
+    color:gray;
+    background-color: rgba(54, 101, 146, 0.7);
+    border:2px solid white;
+    border-collapse: collapse;
+}
+.tabelaOstali tr, .tabelaOstali td{
+    border:2px solid white;
+}
+.paragrafError{
+    color:red;
+    border:1px solid black;
+    background-color: rgba(54, 101, 146, 0.7);
+}
+.tabela a{
+    text-decoration: none;
+    color:white;
+}
+.tabela a:visited{
+    color:white;
+}
+.tabela a:hover{
+    color:rgb(204, 204, 204);
+}
+#back a{
+    position:fixed;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%);
+    color:white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+@media only screen and (max-width:589px){
+    [class*="col-"]{
+        width:100%;
+    }
+    .meni a{
+        font-size: small;
+        background-color:rgba(54, 101, 146, 0.7);
+    }
+    .meni li{
+        width:100%;
+    }
+    .forma{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: small;
+    }
+    .tabela{
+        width: 98%;
+    }
+    .tabela th , .tabela td , .tabela tr{
+        padding-bottom:2px;
+    } 
+    .index a{
+        width:90px;
+        
+    }
+    .objava{
+    position: absolute;
+    left:50%;
+    top:30%;
+    transform: translate(-50%, -30%);
+    }
+    
+}
+.noId{
+    color:white;
+    background-color: red;
+    padding:10px;
+    font-size: x-large;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* tableti */
+@media only screen and (min-width:590px) and (max-width:1023px) {
+    [class*="col-"]{
+        width:100%;
+    }
+    .meni a{
+        font-size: small;
+    }
+    .tabela{
+        width: 82%;
+    }
+    .index a{
+        width:100px;   
+    }
+    
+}
+
+@media only screen and (min-width:1024px){
+    .col-1 {
+        width:8.33%;
+    }
+    
+    .col-2 {
+        width:16.66%;
+    }
+    
+    .col-3 {
+        width:25%;
+    }
+    
+    .col-4 {
+        width:33.33%;
+    }
+    
+    .col-5 {
+        width:41.66%;
+    }
+    
+    .col-6 {
+        width:50%;
+    }
+    
+    .col-7 {
+        width:58.33;
+    }
+    
+    .col-8 {
+        width:66.66%;
+    }
+    
+    .col-9 {
+        width:75%;
+    }
+    
+    .col-10 {
+        width:83.33%;
+    }
+    
+    .col-11 {
+        width:91.66%;
+    }
+    
+    .col-12 {
+        width:100%;
+    
+    }
+    }
