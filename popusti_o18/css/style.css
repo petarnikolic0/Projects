@@ -1,0 +1,174 @@
+* {
+    font-family: montserrat;
+}
+body {
+    background: white;
+}
+
+/* ***** HEADER i CAROUSEL ***** */
+
+.section-padding {
+    padding: 100px 0;
+}
+.carousel-item {
+    height: 100vh;
+    min-height:300px;
+}
+.carousel-caption { 
+    bottom:220px; /*Moze i 220*/
+    z-index: 2;
+  } 
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: darkorange;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #000;
+    margin-top: 15px;
+}
+/* Ovo je za sliku da se ne mneja  ******/
+.carousel-inner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover !important;
+    display: block;
+}
+/* /* Ovo je za sliku da se ne mneja ^ iznad ******/
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light {
+    background: linear-gradient(to right, #ed1f30, #8f1620);
+}
+.navbar-light .navbar-brand {
+    color:rgb(224, 224, 224);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing:2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: white;
+}
+.navbar-light .navbar-nav .navbar-link {
+    color: white;
+}
+.nav-link {
+    color:rgb(224, 224, 224);
+}
+.nav-link:hover {
+    color:white;
+    background: #ed1f30;
+}
+.btn {
+    color:rgb(224, 224, 224);
+    font-size: 25px;
+    font-weight: 700;
+}
+.popusti-insta {
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text; */
+    background-image: linear-gradient(43deg, #ffffff 0%, #ffffff 46%, #ffffff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.popusti-insta {
+    color: transparent;
+    background-clip: text;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+}
+.popusti-insta {
+    color:rgb(224, 224, 224);
+}
+.insta-top {
+    text-decoration: none;
+}
+.link-insta {
+    text-decoration: none;
+    color: white;
+}
+.link-insta:hover {
+    color:rgb(224, 224, 224);
+}
+.btn:hover {
+    color: white;
+}
+.instagram {
+    font-size: 25px;
+}
+.w-100 {
+    height: 100vh;
+}
+.navbar-toggler {
+    color: white;
+    border: 1px solid white;
+}
+.navbar-toggler:hover {
+    color:rgb(224, 224, 224);
+}
+
+.navbar-toggler-icon {
+    color:rgb(224, 224, 224);
+}
+
+
+/* ***** RESPONSIVE CSS ***** */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption {
+        bottom: 165px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.0;
+        font-size: 12px;
+    }
+}
+
+

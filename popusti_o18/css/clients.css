@@ -1,0 +1,75 @@
+#tema {
+    margin-top: 60px;
+    background-color: black;
+}
+.naslov {
+    padding-top: 60px;
+    color: white;
+}
+.paragraf {
+    color: white;
+}
+.accordion {
+    margin-bottom: 120px;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+}
+.naziv-kategorije {
+    color: blueviolet;
+}
+.table th {
+    text-align: center;
+}
+.table tr {
+    text-align: center;
+}
+.accordion .accordion-item .accordion-header button.accordion-button {
+    background: linear-gradient(to right, #ff3800, #af1500);
+    color: white;
+    border-radius: 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.5;
+    text-decoration: none;
+}
+.accordion .accordion-item .accordion-header {
+    border-bottom: none;
+    background: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+.accordion .accordion-item .accordion-header button {
+    font-size: 20px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus  {
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+}
+.accordion .accordion-item .accordion-header button:hover {
+    background: linear-gradient(to right, #ff3800, #ff3800);
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+/* unutar harmonike */
+.accordion-body {
+    background: rgb(41, 41, 41);
+}
+
+.table thead {
+    background: linear-gradient(to right, rgb(63, 63, 63), rgb(41, 41, 41));
+    /* background: rgb(41, 41, 41); */
+    color: white;
+}
+.table tbody{
+    background: white;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
